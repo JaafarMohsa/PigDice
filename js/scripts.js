@@ -33,6 +33,7 @@ $(document).ready(function(){
             $("#C1").text('1');
             $("#roll1").show();
             $("#roll10").hide();
+            $("#roll11").show();
           }
 
   });
@@ -44,7 +45,7 @@ $(document).ready(function(){
 $("#hold").click(function() {
   holdScore += totalScore;
 $("#roll10").hide();
-$("#roll11").show();
+// $("#roll11").show();
 });
 
 
@@ -77,6 +78,7 @@ $('#roll11').click(function(){
           $("#C2").text('1');
           $("#roll2").show();
           $("#roll11").hide();
+          $("#roll10").show();
         }
 
 });
@@ -87,7 +89,7 @@ $("#new").click(function() {
 
 $("#hold").click(function() {
 holdScore2 += totalScoreTwo;
-$("#roll11").hide();
+// $("#roll11").hide();
 $("#roll10").show();
 });
 });
