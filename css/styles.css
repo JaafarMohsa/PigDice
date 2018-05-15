@@ -1,7 +1,163 @@
-.playField {
+
+
+
+body {
+    background: #C9FFBF;
+	background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
+	background: linear-gradient(to right, #FFAFBD, #C9FFBF);
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
+    color: #555;
+}
+
+h3, p, li {text-transform: uppercase;}
+
+.row {
+
+     rgba:(0, 0, 0, 0.3);
+
+}
+
+
+
+
+.player {
+    width: 50%;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.player1score{
+    text-align: center;
+    font-size: 80px;
+
+    font-weight: 300;
+    color: #EB4D4D;
+    margin-bottom: 10px;
+  }
+.player2score{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #2ecc71;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+#roll1{
   display: none;
 }
 
-.playField2 {
+#roll2{
   display: none;
 }
+
+
+.C1{
+  background-color: #EB4D4D;
+  color: #fff;
+  width: 40%;
+  margin: 0 auto;
+  padding: 12px;
+  text-align: center;
+}
+.C2 { background-color: #2ecc71;
+color: #fff;
+width: 40%;
+margin: 0 auto;
+padding: 12px;
+text-align: center;
+}
+
+
+.C1 .C2 .player::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -7px;
+    right: 10px;
+
+}
+
+.P1score{
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.P2score{
+    background-color: #2ecc71;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #555;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+#new { top: 105px;}
+
+#roll10{ top: 413px;}
+#roll11{ top: 413px;}
+#hold{top: 413px;}
+#dice {
+    position: absolute;
+    left: 50%;
+    top: 178px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+.winner1 { background-color: #f7f7f7; }
+.winner .player { font-weight: 300; color: #EB4D4D; }
+
+.winner1 { background-color: rgba(255, 175, 189, 0.1) }
+.winner2 { background-color: rgba(46, 204, 113, 0.1) }
+.winner1 #P1 { font-weight: 300; color: #EB4D4D;}
+.winner2 #P2{ font-weight: 300; color: #2ecc71;}
