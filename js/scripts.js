@@ -11,6 +11,7 @@ $(document).ready(function(){
     var dice = Math.floor((Math.random() * 6)+1);
     $("#roll1").hide();
 
+
           //output the rolled value
           $("#C1").text('');
           $("#C1").append(dice);
@@ -45,7 +46,7 @@ $(document).ready(function(){
 $("#hold").click(function() {
   holdScore += totalScore;
 $("#roll10").hide();
-// $("#roll11").show();
+$("#roll11").show();
 });
 
 

@@ -1,6 +1,4 @@
 
-
-
 body {
     background: #C9FFBF;
 	background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);
@@ -19,7 +17,9 @@ h3, p, li {text-transform: uppercase;}
      rgba:(0, 0, 0, 0.3);
 
 }
-
+#roll11{
+  display:none;
+}
 
 
 
